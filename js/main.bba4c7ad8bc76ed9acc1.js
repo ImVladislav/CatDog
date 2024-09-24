@@ -144,17 +144,22 @@ var deferred,
                       className: "loop",
                       id: "loop",
                     }),
-                    react.createElement("img", {
-                      style: {
-                        // backgroundColor: "red", // або будь-який інший яскравий колір
-                        // width: "100px",
-                        // height: "100px",
-                      },
-                      className: "catdogScan",
-                      id: "catdogScan",
-                      src: "../assets/images/catdogSkelet.png",
-                    })
+                    react.createElement(
+                      "img",
+                      {
+                        style: {
+                          WebkitMaskPosition: `${mousePos.x - 35}px ${mousePos.y - 35}px`,
+                          maskPosition: `${mousePos.x - 35}px ${mousePos.y - 35}px`,
+                          // zIndex: 9999,
+                          // position: "relative",
+                        },
+                        className: "catdogScan",
+                        id: "catdogScan",
+                        src: "./assets/images/catdogSkelet.png",
+                      }
+                    )
                   ),
+                  
                   react.createElement("img", {
                     className: "roadmapBorn",
                     src: "../assets/images/roadmapBorn.png",
