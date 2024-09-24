@@ -146,8 +146,9 @@ var deferred,
                     }),
                     react.createElement("img", {
                       style: {
-                        WebkitMaskPositionX: mousePos.x - 35 + "px",
-                        WebkitMaskPositionY: mousePos.y - 35 + "px",
+                        // backgroundColor: "red", // або будь-який інший яскравий колір
+                        // width: "100px",
+                        // height: "100px",
                       },
                       className: "catdogScan",
                       id: "catdogScan",
@@ -570,7 +571,13 @@ var deferred,
                 {
                   href: "https://pump.fun/Vc82vQsoigcfqWiB6CMjLwoha8fL1CYZKt4Y7ajpump",
                 },
-                react.createElement("img", { src: "../assets/images/soc3.png" })
+                react.createElement("img", { 
+                  src: "../assets/images/soc3.png", 
+                  style: {
+                    width: "38px", // нова ширина
+                    height: "38px" // нова висота
+                  }
+                })
               )
             )
           ),
